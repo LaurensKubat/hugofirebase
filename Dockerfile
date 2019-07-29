@@ -1,3 +1,3 @@
 FROM node:10
-RUN apt-get update && apt-get install hugo && npm install -g firebase-tools
+RUN snap install hugo --channel=extended && npm install -g firebase-tools
 
