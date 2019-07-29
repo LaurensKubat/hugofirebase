@@ -1,3 +1,3 @@
-FROM node:10
-RUN snap install hugo --channel=extended && npm install -g firebase-tools
+FROM node:10-alpine
+RUN apk update && apk add hugo && npm install -g firebase-tools
 
